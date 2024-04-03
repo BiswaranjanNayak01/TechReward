@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" parallel="tests" thread-count="1" data-provider-thread-count="1">
+	<listeners>
+		<listener class-name="com.framework.listenters.TestNGExecutionListener"></listener>
+	</listeners>
+	<parameter name="testng.metrics.report.logo" value="https://ui3.assets-asda.com/dm/221104_ahc_asda-elf-hat?fmt=png-alpha"/>
+	<parameter name="testng.metrics.report.name" value="regression.html"/>
+<!--	</parameter>-->
+	<parameter name="testng.metrics.report.appendTimestamp" value="True"/>
+<!--	</parameter>-->
+	<test name="Test">
+		<classes>
+			<class name="testRunner.TestNGTestRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

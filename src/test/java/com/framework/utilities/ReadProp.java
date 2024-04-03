@@ -10,7 +10,7 @@ public class ReadProp {
 	public static Properties readData(String fileName) {
 		Properties prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\Config\\"+fileName);
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/Config/"+fileName);
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
